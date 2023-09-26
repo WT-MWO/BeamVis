@@ -1,0 +1,241 @@
+﻿<liml version="21">
+  <analysis type="S30" />
+  <node nid="1" x="0" y="0" z="0" />
+  <node nid="2" x="2" y="0" z="0" />
+  <node nid="3" x="2" y="1" z="0" />
+  <elset name="Default" colorrgb="DADADA" expanded="true" material="Material">
+    <elem eid="1" shape="line2" nodes="1 2" />
+    <elem eid="2" shape="line2" nodes="2 3" />
+  </elset>
+  <gravity>
+    <x>0 m/s²</x>
+    <y>0 m/s²</y>
+    <z>-9.81 m/s²</z>
+  </gravity>
+  <pinnedsupport selection="pinned_support_nodes(2)" />
+  <fixed selection="fixed_support_nodes" />
+  <mat name="Material">
+    <geometric type="RectTube" recta="80 mm" rectb="80 mm" rectthickness="4 mm" />
+    <mechanical type="Isotropic" youngsmodulus="210 GPa" poissonratio="0.3" />
+    <density type="Simple" density="7850 kg/m³" />
+  </mat>
+  <nodeselection name="pinned_support_nodes(2)" direct="true">
+    <node nid="3" />
+  </nodeselection>
+  <nodeselection name="fixed_support_nodes" direct="true">
+    <node nid="1" />
+  </nodeselection>
+  <fieldvariable name="displacement" displayunit="mm" expanded="true" />
+  <fieldvariable name="rotation" displayunit="rad" />
+  <fieldvariable name="reaction force" displayunit="N" />
+  <fieldvariable name="reaction moment" displayunit="N.m" />
+  <fieldvariable name="bending moment 2" displayunit="N.m" expanded="true" />
+  <table>
+    <component>Default</component>
+    <elementvalues />
+    <coordinates unit="m" />
+    <saveonsolve filename="data.csv" />
+  </table>
+  <solution>
+    <analysis type="S30" />
+    <node nid="1" x="0" y="0" z="0" />
+    <node nid="2" x="2" y="0" z="0" />
+    <node nid="3" x="2" y="1" z="0" />
+    <elset name="Default" colorrgb="DADADA" expanded="true" material="Material">
+      <elem eid="1" shape="line2" nodes="1 2" />
+      <elem eid="2" shape="line2" nodes="2 3" />
+    </elset>
+    <gravity>
+      <x>0 m/s²</x>
+      <y>0 m/s²</y>
+      <z>-9.81 m/s²</z>
+    </gravity>
+    <pinnedsupport selection="pinned_support_nodes(2)" />
+    <fixed selection="fixed_support_nodes" />
+    <mat name="Material">
+      <geometric type="RectTube" recta="80 mm" rectb="80 mm" rectthickness="4 mm" />
+      <mechanical type="Isotropic" youngsmodulus="210 GPa" poissonratio="0.3" />
+      <density type="Simple" density="7850 kg/m³" />
+    </mat>
+    <nodeselection name="pinned_support_nodes(2)" direct="true">
+      <node nid="3" />
+    </nodeselection>
+    <nodeselection name="fixed_support_nodes" direct="true">
+      <node nid="1" />
+    </nodeselection>
+    <results>
+      <!--Binary data is base64 encoded, 32-bit integer or 64-bit double, big-endian-->
+      <nodevariable name="displmag">
+        <maxandmin>
+          <component name="Default" max="0.000893833961350699" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAA/TUoF0Ocw0QAAAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="displx">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="disply">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="displz">
+        <maxandmin>
+          <component name="Default" max="0" min="-0.000893833961350699" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAC/TUoF0Ocw0QAAAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="rotx">
+        <maxandmin>
+          <component name="Default" max="0.000932938384741023" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAA/Srn1mLAdjD9Okg3tArpy
+</values>
+      </nodevariable>
+      <nodevariable name="roty">
+        <maxandmin>
+          <component name="Default" max="0.000670375471013024" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>gAAAAAAAAAA/RfeEXK1kmz9F94RcrWSa
+</values>
+      </nodevariable>
+      <nodevariable name="rotz">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="reactionforcemag">
+        <maxandmin>
+          <component name="Default" max="176.268633414126" min="104.658374585874" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>QGYImKUaCSBAWioizyi2JA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionforcex">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionforcey">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionforcez">
+        <maxandmin>
+          <component name="Default" max="176.268633414126" min="104.658374585874" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>QGYImKUaCSBAWioizyi2JA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionmommag">
+        <maxandmin>
+          <component name="Default" max="175.081588304218" min="1.14571573537582E-13" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>QGXinF8TSzk9QB/gP2G60A==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionmomx">
+        <maxandmin>
+          <component name="Default" max="-1.13686837721616E-13" min="-57.8372065858734" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>wEzrKZXdKTu9QAAAAAAAAA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionmomy">
+        <maxandmin>
+          <component name="Default" max="-1.4210854715202E-14" min="-165.252594828252" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>wGSoFUG/z3O9EAAAAAAAAA==
+</values>
+      </nodevariable>
+      <nodevariable name="reactionmomz">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAM=
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAA==
+</values>
+      </nodevariable>
+      <nodevariable name="bendingmomv">
+        <maxandmin>
+          <component name="Default" max="165.252594828252" min="-28.9186032929368" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>QGSoFUG/z3PAPOspld0pUD1AAAAAAAAA
+</values>
+      </nodevariable>
+      <nodevariable name="bendingmomw">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <nodes>AAAAAQAAAAIAAAAD
+</nodes>
+        <values>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</values>
+      </nodevariable>
+      <elementnodevariable name="bendingmomv">
+        <maxandmin>
+          <component name="Default" max="165.252594828252" min="-57.8372065858735" />
+        </maxandmin>
+        <elements>AAAAAQAAAAI=
+</elements>
+        <values>QGSoFUG/z3O9MAAAAAAAAMBM6ymV3SlIPUAAAAAAAAA=
+</values>
+      </elementnodevariable>
+      <elementnodevariable name="bendingmomw">
+        <maxandmin>
+          <component name="Default" max="0" min="0" />
+        </maxandmin>
+        <elements>AAAAAQAAAAI=
+</elements>
+        <values>gAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=
+</values>
+      </elementnodevariable>
+    </results>
+  </solution>
+</liml>
